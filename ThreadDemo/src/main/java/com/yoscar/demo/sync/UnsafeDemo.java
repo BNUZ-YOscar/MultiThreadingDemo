@@ -26,7 +26,7 @@ class BuyTicket implements Runnable {
         }
     }
 
-    private void buy() {
+    private synchronized void buy() {
         if (tickNums <= 0) {
             flag = false;
             return;
