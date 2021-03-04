@@ -5,11 +5,10 @@ package com.yoscar.demo.runnableDemo;
 
 public class RunnableDemo2 implements Runnable {
 
-    private int ticketNums = 10;
+    private static int ticketNums = 10;
 
-    public synchronized void run() {
-        while (true) {
-            if (ticketNums <= 0) {
+    public  void run() {
+        while (true) { if (ticketNums <= 0) {
                 break;
             }
             try {
