@@ -12,7 +12,6 @@ public class RunnableDemo implements Runnable {
     public static void main(String[] args) {
 
         RunnableDemo runnable = new RunnableDemo();
-
         new Thread(runnable).start();
 
         for (int i = 0; i < 20; i++) {
