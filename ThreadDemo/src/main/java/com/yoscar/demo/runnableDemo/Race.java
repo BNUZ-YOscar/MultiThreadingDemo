@@ -1,5 +1,7 @@
 package com.yoscar.demo.runnableDemo;
 
+// 使用Runnable实现龟兔赛跑Demo
+// 同一个资源方便被多个线程使用
 public class Race implements Runnable {
 
     private static String winner;

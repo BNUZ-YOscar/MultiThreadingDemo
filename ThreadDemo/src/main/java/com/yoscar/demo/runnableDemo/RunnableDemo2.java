@@ -1,14 +1,15 @@
 package com.yoscar.demo.runnableDemo;
 
 // 多个线程同时操作同一个对象
-// 买火车票
+// 买火车票出现了线程不安全问题，待解决
 
 public class RunnableDemo2 implements Runnable {
 
     private static int ticketNums = 10;
 
-    public  void run() {
-        while (true) { if (ticketNums <= 0) {
+    public void run() {
+        while (true) {
+            if (ticketNums <= 0) {
                 break;
             }
             try {

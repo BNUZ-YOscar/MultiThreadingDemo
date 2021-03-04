@@ -1,5 +1,6 @@
 package com.yoscar.demo.runnableDemo;
 
+// Runable实现多线程
 public class RunnableDemo implements Runnable {
 
     public void run() {
